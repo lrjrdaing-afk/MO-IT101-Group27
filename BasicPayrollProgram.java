@@ -199,7 +199,7 @@ public class BasicPayrollProgram {
 
         return sssDeduction;
     }
-
+// compute philhealth
     static double computePhilHealth(double grossIncome) {
         double philHealthDeduction = 0;
         // 0.03 = premium rate
@@ -232,7 +232,7 @@ public class BasicPayrollProgram {
         }
         return taxDeduction;
     }
-// use ternary 
+// calculate pagibig
 
     static double computePagIbig(double grossIncome) {
         double contribution = grossIncome >= 1_500 ? grossIncome * 0.02f
