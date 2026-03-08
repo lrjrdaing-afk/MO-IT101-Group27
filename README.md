@@ -18,3 +18,4 @@ The program calculates the total hours worked while applying rules such as the 8
 
 Working hours are grouped into two payroll cutoff periods: 1–15 and 16–end of the month. The program then computes the gross salary, subtracts government deductions (SSS, PhilHealth, Pag-IBIG, and Withholding Tax), and displays the payroll summary including hours worked, gross salary, deductions, and net salary.
 
+Project Plan link : https://docs.google.com/spreadsheets/d/1HMEVUhI2O6Gfg6cjb8s-gZpOU4HTeq9a/edit?usp=sharing&ouid=111972521313348663798&rtpof=true&sd=true
