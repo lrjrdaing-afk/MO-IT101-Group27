@@ -13,78 +13,51 @@ John Russel Daing – Assisted in the coding development of the payroll deductio
 Program Details
 
 Features
-Employee Information Retrieval
+1. Employee Information
+    Reads employee records from a CSV file.
+    Prompts the user to enter an Employee Number.
+    Displays employee information including:
+      -Employee ID
+      -Name
+      -Birthday
+    Shows an error message if the employee does not exist.
 
-Reads employee data from a CSV file.
+2. Attendance Processing
+    Reads attendance records from a CSV file.
+    Filters records based on the selected employee.
+    Processes attendance data from June to December 2024.
+    Groups working hours into two payroll cutoff periods:
+      -1st Cutoff: Day 1 – 15
+      -2nd Cutoff: Day 16 – End of Month
 
-Allows the user to enter an employee number.
+3. Hours Worked Calculation
+   The program calculates working hours using the following rules:
+    8:10 AM grace period for login
+    5:00 PM maximum logout time
+    1-hour lunch break deduction
+    Maximum of 8 working hours per day
 
-Displays the employee’s name, ID, and birthday if found.
+4. Payroll Computation
+  The program calculates the gross salary using:
+    (Gross Salary = Hours Worked × Hourly Rate)
+  Payroll is calculated separately for each cutoff period.
 
-Shows an error message if the employee does not exist.
+5. Government Deductions
+   The program automatically computes the following deductions:
+    -SSS
+    -PhilHealth
+    -Pag-IBIG
+    -Withholding Tax
+  These deductions are subtracted from the gross salary to determine the net salary.
 
-Attendance Processing
+6. Payroll Summary Output
 
-Reads attendance records from a CSV file.
-
-Filters records based on the selected employee.
-
-Processes attendance from June to December 2024.
-
-Groups work hours into payroll cutoff periods:
-
-1–15
-
-16–end of month
-
-Work Hours Calculation
-
-The program calculates daily working hours based on the following rules:
-
-8:10 AM grace period for login
-
-5:00 PM maximum logout time
-
-1-hour lunch break deduction
-
-Maximum of 8 working hours per day
-
-Payroll Computation
-
-The program calculates the gross salary using:
-
-Gross Salary = Hours Worked × Hourly Rate
-
-Payroll is computed for each cutoff period.
-
-Government Deductions
-
-The program automatically computes the following deductions:
-
-SSS
-
-PhilHealth
-
-Pag-IBIG
-
-Withholding Tax
-
-These deductions are subtracted from the gross salary to determine the net salary.
-
-Payroll Summary Output
-
-The program displays a summary that includes:
-
-Payroll cutoff period
-
-Total hours worked
-
-Gross salary
-
-Government deductions
-
-Net salary
-
+    The system displays a payroll summary including:
+    Payroll cutoff period
+    Total hours worked
+    Gross salary
+    Government deductions
+    Net salary
 
 
 Project Plan link : https://docs.google.com/spreadsheets/d/1HMEVUhI2O6Gfg6cjb8s-gZpOU4HTeq9a/edit?usp=sharing&ouid=111972521313348663798&rtpof=true&sd=true
