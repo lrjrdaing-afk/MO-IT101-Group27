@@ -43,8 +43,8 @@ public class BasicPayrollProgram {
                     continue;
                 }
 
-                // IF WE ONLY USE "," it will break the csv because of this kind of value i.e "90,000" 
-                // This regex skips the split if the comma is enclosed by double quote
+                /* IF WE ONLY USE "," it will break the csv because of this kind of value i.e "90,000" 
+                 This regex skips the split if the comma is enclosed by double quote*/
                 String[] data = line.split(",(?=(?:[^\"]*\"[^\"]*\")*[^\"]*$)");
 
                 if (data[0].equals(inputEmpNo)) {
