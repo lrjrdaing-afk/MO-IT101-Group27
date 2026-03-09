@@ -6,16 +6,85 @@ The Basic Payroll Program is a Java application that reads employee and attendan
 
 Team Details
 
-Jazper Adriel Lim – Main developer who implemented the payroll logic, attendance processing, and salary computation.
+Jazper Adriel Lim – Primarily responsible for the development and coding of the system, including the implementation of attendance management, computation of employees’ hours worked, and the resources/download file functionality. Also collaborated with the team in debugging and field testing of the program.
 
-John Russel Daing – Responsible for program testing, verifying payroll outputs, and documenting the system.
+John Russel Daing – Assisted in the coding development of the payroll deduction module, including the implementation of statutory deductions such as SSS, PhilHealth, Pag-IBIG, and Tax. Mainly responsible for the preparation of system documentation and contributed to debugging and field testing in collaboration with the team..
 
 Program Details
 
-The system reads employee information and attendance records from CSV files. The user enters an employee number, and the program retrieves the employee’s details and attendance logs.
+Features
+Employee Information Retrieval
 
-The program calculates the total hours worked while applying rules such as the 8:10 AM grace period, 5:00 PM logout limit, lunch break deduction, and maximum of 8 work hours per day.
+Reads employee data from a CSV file.
 
-Working hours are grouped into two payroll cutoff periods: 1–15 and 16–end of the month. The program then computes the gross salary, subtracts government deductions (SSS, PhilHealth, Pag-IBIG, and Withholding Tax), and displays the payroll summary including hours worked, gross salary, deductions, and net salary.
+Allows the user to enter an employee number.
+
+Displays the employee’s name, ID, and birthday if found.
+
+Shows an error message if the employee does not exist.
+
+Attendance Processing
+
+Reads attendance records from a CSV file.
+
+Filters records based on the selected employee.
+
+Processes attendance from June to December 2024.
+
+Groups work hours into payroll cutoff periods:
+
+1–15
+
+16–end of month
+
+Work Hours Calculation
+
+The program calculates daily working hours based on the following rules:
+
+8:10 AM grace period for login
+
+5:00 PM maximum logout time
+
+1-hour lunch break deduction
+
+Maximum of 8 working hours per day
+
+Payroll Computation
+
+The program calculates the gross salary using:
+
+Gross Salary = Hours Worked × Hourly Rate
+
+Payroll is computed for each cutoff period.
+
+Government Deductions
+
+The program automatically computes the following deductions:
+
+SSS
+
+PhilHealth
+
+Pag-IBIG
+
+Withholding Tax
+
+These deductions are subtracted from the gross salary to determine the net salary.
+
+Payroll Summary Output
+
+The program displays a summary that includes:
+
+Payroll cutoff period
+
+Total hours worked
+
+Gross salary
+
+Government deductions
+
+Net salary
+
+
 
 Project Plan link : https://docs.google.com/spreadsheets/d/1HMEVUhI2O6Gfg6cjb8s-gZpOU4HTeq9a/edit?usp=sharing&ouid=111972521313348663798&rtpof=true&sd=true
