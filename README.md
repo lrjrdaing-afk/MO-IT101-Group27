@@ -14,49 +14,84 @@ Program Details
 
 Features
 1. Employee Information
+   
     Reads employee records from a CSV file.
+   
     Prompts the user to enter an Employee Number.
+   
     Displays employee information including:
       -Employee ID
+   
       -Name
+   
       -Birthday
+   
     Shows an error message if the employee does not exist.
 
+
 2. Attendance Processing
+   
     Reads attendance records from a CSV file.
+   
     Filters records based on the selected employee.
+   
     Processes attendance data from June to December 2024.
+   
     Groups working hours into two payroll cutoff periods:
+   
       -1st Cutoff: Day 1 – 15
+   
       -2nd Cutoff: Day 16 – End of Month
 
+
 3. Hours Worked Calculation
+   
    The program calculates working hours using the following rules:
     8:10 AM grace period for login
+   
     5:00 PM maximum logout time
+   
     1-hour lunch break deduction
+   
     Maximum of 8 working hours per day
 
+
 4. Payroll Computation
+   
   The program calculates the gross salary using:
-    Gross Salary = Hours Worked × Hourly Rate
+  
+Gross Salary = Hours Worked × Hourly Rate
+    
   Payroll is calculated separately for each cutoff period.
 
+
 5. Government Deductions
+   
    The program automatically computes the following deductions:
+   
     -SSS
+   
     -PhilHealth
+   
     -Pag-IBIG
+   
     -Withholding Tax
+   
   These deductions are subtracted from the gross salary to determine the net salary.
+
 
 6. Payroll Summary Output
 
     The system displays a payroll summary including:
+   
     Payroll cutoff period
+   
     Total hours worked
+   
     Gross salary
+   
     Government deductions
+   
     Net salary
 
 
