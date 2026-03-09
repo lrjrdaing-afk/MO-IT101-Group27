@@ -20,6 +20,7 @@ Features
     Prompts the user to enter an Employee Number.
    
     Displays employee information including:
+
       -Employee ID
    
       -Name
@@ -29,7 +30,7 @@ Features
     Shows an error message if the employee does not exist.
 
 
-2. Attendance Processing
+3. Attendance Processing
    
     Reads attendance records from a CSV file.
    
@@ -44,7 +45,7 @@ Features
       -2nd Cutoff: Day 16 – End of Month
 
 
-3. Hours Worked Calculation
+4. Hours Worked Calculation
    
    The program calculates working hours using the following rules:
     8:10 AM grace period for login
@@ -56,7 +57,7 @@ Features
     Maximum of 8 working hours per day
 
 
-4. Payroll Computation
+5. Payroll Computation
    
      The program calculates the gross salary using:
   
@@ -65,7 +66,7 @@ Features
      Payroll is calculated separately for each cutoff period.
 
 
-5. Government Deductions
+6. Government Deductions
    
    The program automatically computes the following deductions:
    
@@ -80,7 +81,7 @@ Features
     These deductions are subtracted from the gross salary to determine the net salary.
 
 
-6. Payroll Summary Output
+7. Payroll Summary Output
 
     The system displays a payroll summary including:
    
