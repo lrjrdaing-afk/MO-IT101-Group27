@@ -39,7 +39,7 @@ Features
 
 4. Payroll Computation
   The program calculates the gross salary using:
-    (Gross Salary = Hours Worked × Hourly Rate)
+    Gross Salary = Hours Worked × Hourly Rate
   Payroll is calculated separately for each cutoff period.
 
 5. Government Deductions
