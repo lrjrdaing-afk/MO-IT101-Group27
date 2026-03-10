@@ -1,3 +1,6 @@
+Repository Name: MO-IT101-Group27
+Date Added: 3/9/2026
+
 CP1 – MS2 Source Code
 Basic Payroll Program
 Program Overview
