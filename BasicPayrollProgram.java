@@ -179,7 +179,7 @@ public class BasicPayrollProgram {
     }
 
     
-    // Function to compute total hours worked in a day
+    //   compute total hours worked in a day
 
     static double computeHours(LocalTime login, LocalTime logout) {
         LocalTime graceTime = LocalTime.of(8, 10); // Max hours if before grace
@@ -206,7 +206,7 @@ public class BasicPayrollProgram {
     }
 
     
-    // Function to compute SSS deduction
+    //  compute SSS deduction
    
     static double computeSss(double grossIncome) {
         double sssDeduction = 0.0;
@@ -227,7 +227,7 @@ public class BasicPayrollProgram {
     }
 
   
-    // Function to compute PhilHealth deduction
+    //  compute PhilHealth deduction
     
     static double computePhilHealth(double grossIncome) {
         if (grossIncome <= 10000) return 300 / 2.0;
@@ -236,7 +236,7 @@ public class BasicPayrollProgram {
     }
 
     
-    // Function to compute Pag-IBIG deduction using ternary
+    //  compute Pag-IBIG deduction using ternary
     
     static double computePagIbig(double grossIncome) {
         double contribution = (grossIncome >= 1500) ? grossIncome * 0.02
@@ -245,7 +245,7 @@ public class BasicPayrollProgram {
     }
 
     
-    // Function to compute tax deduction
+    //  compute tax deduction
    
     static double computeTax(double taxableIncome) {
         if (taxableIncome <= 20832) return 0;
@@ -257,7 +257,7 @@ public class BasicPayrollProgram {
     }
 
     
-    // Function to convert month number to month name
+    //  convert month number to month name
     
     static String getMonthName(int month) {
         return switch (month) {
